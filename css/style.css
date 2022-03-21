@@ -1,0 +1,265 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+/* Start header  */
+
+/* End header  */
+
+
+/* Start Navbar  */
+
+.navmenus{
+    background-color:rgba(0,0,0,0.1);
+    padding:20px;
+}
+
+.nav-link.active {
+    color:red;
+}
+
+.nav-link:hover{
+    color:red !important;
+}
+
+.lines1,.lines2,.lines3{
+    width:20px;
+    height:3px;
+    background:#fff;
+
+}
+
+.lines2{
+    margin:3px 0px;
+}
+/* End Navbar  */
+
+/* Start bannner  */
+
+.carouselimages1{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.5)),url(../img/back.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    padding-top:20px;
+}
+
+.carouselimages2{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.5)),url(../img/hero4.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    padding-top:20px;
+}
+
+.carouselimages3{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.5)),url(../img/b4.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    padding-top:20px;
+}
+
+.banners{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.btns{
+    padding:5px 10px;
+    animation:mybtn 2s;
+}
+
+.bannerparagraphs{
+    animation: myani 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.bannerparagraphs2{
+    animation: myani 1.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes myani{
+    0%{
+        transform: translate(-200px);
+        opacity:0;
+    }
+    100%{
+        transform:translate(0px);
+        opacity:1;
+    }
+}
+
+
+@keyframes myani{
+    0%{
+        transform: translate(-200px);
+        opacity:0;
+    }
+    100%{
+        transform:translate(0px);
+        opacity:1;
+    }
+}
+
+@keyframes mybtn{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* End banner  */
+
+/* Start Shop Section  */
+
+.card{
+    overflow: hidden;
+    position:relative;
+    transition:all 1s;
+}
+
+.card img{
+    transition:all 1s;
+}
+
+.card:hover img{
+    transform:scale(1.2);
+}
+
+/* End Shop Section  */
+
+/* Start Product Section  */
+
+.prices{
+    position:absolute;
+    top:50%;
+    left:25%;
+
+    transform:scale(0);
+
+    transition:all 1s;
+}
+
+.card:hover .prices{
+    transform: scale(1);
+}
+
+.shopicons{
+    position:absolute;
+    top:50%;
+    right:25%;
+
+    transform: scale(0);
+
+    transition:all 1s;
+    
+}
+
+.card:hover .shopicons{
+    transform:scale(1);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.products span{
+    color:blue;
+}
+
+.shirtdisplays{
+    display:flex;
+}
+
+.tshirtdisplays{
+    display:none;
+}
+
+span:hover{
+    color:red;
+}
+
+.backpackdisplays{
+    display:none;
+}
+
+.shoedisplays{
+    display:none;
+}
+/* End Product Section  */
+
+/* Start Team Section  */
+.teams{
+    background:skyblue;
+}
+
+.cards{
+    border-radius: 20px;
+}
+
+/* End Team Section  */
+
+/* Start Contact Section  */
+
+
+.formchecks label{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.form-control{
+    width: 100%;
+    background: transparent;
+    color:blue;
+    border:0;
+    border-bottom: 2px solid blue;
+    border-color: none;
+    box-shadow: 0;
+    border-radius: 0;
+}
+
+.form-control:focus{
+    background:transparent;
+    color:royalblue;
+    box-shadow: none;
+    border-bottom: 2px solid red;
+}
+
+label{
+    color:blue;
+}
+
+label::placeholder{
+    color:blue
+}
+
+
+/* End Contact Section  */
+
+/* Start Footer Section  */
+
+/* .footers{
+    background-color: darkblue;
+} */
+/* End Footer Section  */
+
+
+
+
